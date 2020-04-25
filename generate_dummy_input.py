@@ -1,9 +1,9 @@
 import random
 
 #
-max_fat_tile_width = 100
-max_lean_tile_width = 3
-is_fat_interesting_region_present = True
+gpu_tile_width = 100
+cpu_tile_width = 3
+is_fat_interesting_region_present = 1
 number_of_lean_regions = 3
 column_and_bucket_counts = """
 4 4
@@ -20,14 +20,14 @@ row_count = 1000
 #
 
 
-with open("dummy_max_fat_tile_width.txt", "w") as output_file:
-        output_file.write(str(max_fat_tile_width))
+with open("dummy_gpu_tile_width.txt", "w") as output_file:
+        output_file.write(str(gpu_tile_width))
         
-with open("dummy_max_lean_tile_width.txt", "w") as output_file:
-        output_file.write(str(max_lean_tile_width))
+with open("dummy_cpu_tile_width.txt", "w") as output_file:
+        output_file.write(str(cpu_tile_width))
 
 with open("dummy_is_fat_interesting_region_present.txt", "w") as output_file:
-        output_file.write(str(int(is_fat_interesting_region_present)))
+        output_file.write(str(is_fat_interesting_region_present))
         
 with open("dummy_number_of_lean_regions.txt", "w") as output_file:
         output_file.write(str(number_of_lean_regions))

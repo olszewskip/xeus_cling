@@ -1,8 +1,8 @@
 import random
 
-#
+# ---1---
 gpu_tile_width = 100
-cpu_tile_width = 3
+cpu_tile_width = 13
 is_fat_interesting_region_present = 1
 number_of_lean_regions = 3
 column_and_bucket_counts = """
@@ -11,13 +11,32 @@ column_and_bucket_counts = """
 1 6
 117 2
 9886 2
-200 2
 30 4
 30 5
 30 6
+200 2
 """
-row_count = 1000
+row_count = 100
 #
+
+# # ---2---
+# gpu_tile_width = 100
+# cpu_tile_width = 10
+# is_fat_interesting_region_present = 1
+# number_of_lean_regions = 3
+# column_and_bucket_counts = """
+# 0 4
+# 2 5
+# 1 6
+# 117 2
+# 9886 2
+# 30 4
+# 30 5
+# 30 6
+# 200 2
+# """
+# row_count = 100
+# #
 
 
 with open("dummy_gpu_tile_width.txt", "w") as output_file:
